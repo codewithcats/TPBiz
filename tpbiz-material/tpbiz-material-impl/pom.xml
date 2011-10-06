@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>tpbiz-material</artifactId>
+		<groupId>com.mrtanawat.tpbiz</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.mrtanawat.tpbiz</groupId>
+	<artifactId>tpbiz-material-impl</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Tai-Phing Biz Material Management System - Implementation</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.mrtanawat.tpbiz</groupId>
+			<artifactId>tpbiz-material-api</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>dans</groupId>
+			<artifactId>dans-dbf-lib</artifactId>
+			<version>1.0.0-beta-09</version>
+		</dependency>
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework.version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- Common -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+	</dependencies>
+</project>
