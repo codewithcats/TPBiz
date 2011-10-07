@@ -8,7 +8,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://127.0.0.1:3306/tpbiz" />
 		<property name="username" value="root" />
-		<property name="password" value="il0vebmw" />
+		<property name="password" value="admin" />
 	</bean>
 
 	<bean id="dataImportService"
@@ -20,6 +20,11 @@
 
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="providerService"
+		class="com.mrtanawat.tpbiz.material.impl.ProviderService">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 </beans>
