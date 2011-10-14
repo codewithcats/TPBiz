@@ -14,11 +14,11 @@ public interface IProviderService {
 	 * @param provider
 	 * @return newly added provide with id injected
 	 */
-	public Provider add(Provider provider);
+	public Provider add(Provider provider) throws DuplicateCodeException;
 	/**
 	 * Update provider
 	 * @param provider
-	 * @throws ProviderNotExistException when cannot find provider
+	 * @throws EntityNotExistException when cannot find provider
 	 */
-	public void update(Provider provider) throws ProviderNotExistException;
+	public void update(Provider provider) throws EntityNotExistException;
 }
