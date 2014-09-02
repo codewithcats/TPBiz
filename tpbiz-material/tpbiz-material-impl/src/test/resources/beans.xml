@@ -27,4 +27,17 @@
 		class="com.mrtanawat.tpbiz.material.impl.ProviderService">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
+	
+	<bean id="providerRowMapper"
+		class="com.mrtanawat.tpbiz.material.impl.ProviderRowMapper">
+	</bean>
+	
+	<bean id="materialTypeService"
+		class="com.mrtanawat.tpbiz.material.impl.MaterialTypeService">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="materialRowMapper"
+		class="com.mrtanawat.tpbiz.material.impl.MaterialRowMapper">
+	</bean>
 </beans>

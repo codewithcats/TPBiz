@@ -10,7 +10,7 @@ public interface IMaterialTypeService {
 	 * @param type
 	 * @return newly added material type with id injected
 	 */
-	public MaterialType add(MaterialType type);
+	public MaterialType add(MaterialType type) throws DuplicateCodeException;
 	/**
 	 * Update existing material type
 	 * @param type
